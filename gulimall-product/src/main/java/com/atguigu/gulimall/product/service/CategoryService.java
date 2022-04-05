@@ -19,5 +19,16 @@ public interface CategoryService extends IService<CategoryEntity> {
     PageUtils queryPage(Map<String, Object> params);
 
     List<CategoryEntity> listWithTree();
+
+    /**
+     * 找到cateLogId的完整路径
+     * [父/子/孙]
+     * @param catelogId
+     * @return
+     */
+    Long[] findCatelogPath(Long catelogId);
+
+    //级联跟新所有数据
+    void updateCascade(CategoryEntity category);
 }
 
