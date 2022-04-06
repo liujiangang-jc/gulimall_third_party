@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * ??Ʒ???????
+ * 商品三级分类
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:48
  */
 public interface CategoryService extends IService<CategoryEntity> {
 
@@ -20,15 +20,18 @@ public interface CategoryService extends IService<CategoryEntity> {
 
     List<CategoryEntity> listWithTree();
 
+    void removeMenuByIds(List<Long> asList);
+
+
     /**
-     * 找到cateLogId的完整路径
+     * 找到catelogId的完整路径；
      * [父/子/孙]
      * @param catelogId
      * @return
      */
     Long[] findCatelogPath(Long catelogId);
 
-    //级联跟新所有数据
     void updateCascade(CategoryEntity category);
+
 }
 

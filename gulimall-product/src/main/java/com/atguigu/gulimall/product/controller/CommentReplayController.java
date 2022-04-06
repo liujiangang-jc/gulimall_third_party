@@ -18,11 +18,11 @@ import com.atguigu.common.utils.R;
 
 
 /**
- * ??Ʒ???ۻظ???ϵ
+ * 商品评价回复关系
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 22:50:32
  */
 @RestController
 @RequestMapping("product/commentreplay")

@@ -7,14 +7,18 @@ import com.atguigu.gulimall.product.entity.SpuInfoDescEntity;
 import java.util.Map;
 
 /**
- * spu??Ϣ???
+ * spu信息介绍
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:49
  */
 public interface SpuInfoDescService extends IService<SpuInfoDescEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void saveSpuInfoDesc(SpuInfoDescEntity descEntity);
+
+
 }
 

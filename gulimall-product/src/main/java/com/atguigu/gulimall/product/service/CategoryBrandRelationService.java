@@ -1,17 +1,19 @@
 package com.atguigu.gulimall.product.service;
 
+import com.atguigu.gulimall.product.entity.BrandEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.common.utils.PageUtils;
 import com.atguigu.gulimall.product.entity.CategoryBrandRelationEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
- * Ʒ?Ʒ???????
+ * 品牌分类关联
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-11-17 21:25:25
  */
 public interface CategoryBrandRelationService extends IService<CategoryBrandRelationEntity> {
 
@@ -22,5 +24,8 @@ public interface CategoryBrandRelationService extends IService<CategoryBrandRela
     void updateBrand(Long brandId, String name);
 
     void updateCategory(Long catId, String name);
+
+    List<BrandEntity> getBrandsByCatId(Long catId);
+
 }
 

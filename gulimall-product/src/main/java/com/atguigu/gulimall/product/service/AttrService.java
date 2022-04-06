@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * ??Ʒ?
+ * 商品属性
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:49
  */
 public interface AttrService extends IService<AttrEntity> {
 
@@ -27,10 +27,13 @@ public interface AttrService extends IService<AttrEntity> {
 
     AttrRespVo getAttrInfo(Long attrId);
 
-    void updateAttr(AttrEntity attr);
+    void updateAttr(AttrVo attr);
 
     List<AttrEntity> getRelationAttr(Long attrgroupId);
 
     void deleteRelation(AttrGroupRelationVo[] vos);
+
+    PageUtils getNoRelationAttr(Map<String, Object> params, Long attrgroupId);
+
 }
 

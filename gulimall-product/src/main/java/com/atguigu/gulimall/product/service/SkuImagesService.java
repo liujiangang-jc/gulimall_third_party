@@ -7,11 +7,11 @@ import com.atguigu.gulimall.product.entity.SkuImagesEntity;
 import java.util.Map;
 
 /**
- * skuͼƬ
+ * sku图片
  *
- * @author ljg
- * @email 2049464827@qq.com
- * @date 2022-03-07 19:07:14
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:49
  */
 public interface SkuImagesService extends IService<SkuImagesEntity> {
 
